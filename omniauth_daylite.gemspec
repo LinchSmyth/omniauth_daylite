@@ -1,4 +1,4 @@
-require File.expand_path('../lib/omniauth-daylite/version', __FILE__)
+require File.expand_path('../lib/omniauth_daylite/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Linch Smyth"]
