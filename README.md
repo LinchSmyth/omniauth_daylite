@@ -16,8 +16,6 @@ Then `bundle install`
 
 ## Usage
 
-`OmniAuth::Strategies::Daylite` is simply a Rack middleware.
-
 Here's a quick example, adding the middleware to a Rails app in `config/initializers/omniauth.rb`:
 
 ```ruby
@@ -89,7 +87,7 @@ The returned data inside the oauth-daylite will be looks like:
 }
 ```
 
-You can disable fetching this data by adding `only_token: true` (if you need only auth token) or filter data with [filters](#Filters) option.
+You can disable fetching this data by adding `only_token: true` (if you need only auth token) or filter data with [filters](#filters) option.
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
