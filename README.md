@@ -9,10 +9,10 @@ To use it, you'll need to register your application by contacting the Daylite su
 Add to your `Gemfile`:
 
 ```ruby
-gem 'omniauth_daylite'
+gem 'omniauth_daylite', github: "LinchSmyth/omniauth_daylite"
 ```
 
-Then `bundle install`
+Then `bundle`
 
 ## Usage
 
@@ -97,7 +97,7 @@ end
 
 ### UID
 
-Every resource on Daylite doesn't have unique ID, it's only have a `"self"` key which represents relative url 
+Any resource on Daylite doesn't have unique ID, it's only have a `"self"` key which represents relative url 
 like `"/v1/users/1000"`. So by default you will get UID like `"1000"` or `"2000"` **_which is not unique value per each user_**, but you can 
 disable this behavior by adding `create_uid: false` and generate UID for user by yourself:
 
